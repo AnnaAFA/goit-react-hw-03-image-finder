@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { SearchForm, SearchFormButton, SearchFormButtonLabel, SearchFormInput, Searchbar } from "./Searchbar.styled";
+import { SearchForm, SearchFormButton, SearchFormInput, Searchbar } from "./Searchbar.styled";
 import { AiOutlineSearch } from 'react-icons/ai';
 import { IconContext } from "react-icons";
 
