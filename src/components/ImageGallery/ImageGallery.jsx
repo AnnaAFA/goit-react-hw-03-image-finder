@@ -1,4 +1,4 @@
-import axios from 'axios';
+// import axios from 'axios';
 import { ImageItem } from 'components/ImageGalleryItem/ImageGalleryItem';
 import { Component } from 'react';
 import { ImageGallery } from './ImageGallery.styled';
