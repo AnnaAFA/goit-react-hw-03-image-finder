@@ -3,7 +3,7 @@ import { SearchBar } from 'components/Searchbar/Searchbar';
 import { Component } from 'react';
 // import { ThreeDots } from 'react-loader-spinner';
 import { Wrapper } from './App.styled';
-import { ImagesGallery } from './ImageGallery/ImageGallery';
+import { ImagesGallery } from './components/ImageGallery/ImageGallery';
 import debounce from 'lodash.debounce';
 
 export class App extends Component {
