@@ -7,21 +7,22 @@ import {
 } from './Searchbar.styled';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { IconContext } from 'react-icons';
+import PropTypes from 'prop-types';
 
 export class SearchBar extends Component {
   state = {
     searchQuery: '',
+    largeImage: '',
   };
 
   handleChange = e => {
     this.setState({ searchQuery: e.target.value });
-    this.props.onChange(e.target.value);
-    console.log(this.state.searchQuery);
   };
 
   handleSubmit = e => {
     e.preventDefault();
-    console.log(this.state);
+
+    this.props.onChange(this.state.searchQuery);
   };
   render() {
     return (
@@ -33,8 +34,6 @@ export class SearchBar extends Component {
                 <AiOutlineSearch />
               </div>
             </IconContext.Provider>
-
-            {/* <SearchFormButtonLabel>Search</SearchFormButtonLabel> */}
           </SearchFormButton>
 
           <SearchFormInput
@@ -49,3 +48,7 @@ export class SearchBar extends Component {
     );
   }
 }
+
+SearchBar.propTypes = {
+  onChange: PropTypes.func.isRequired,
+};
