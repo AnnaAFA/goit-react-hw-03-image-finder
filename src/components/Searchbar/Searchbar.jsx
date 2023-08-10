@@ -12,7 +12,6 @@ import PropTypes from 'prop-types';
 export class SearchBar extends Component {
   state = {
     searchQuery: '',
-    largeImage: '',
   };
 
   handleChange = e => {
@@ -23,6 +22,7 @@ export class SearchBar extends Component {
     e.preventDefault();
 
     this.props.onChange(this.state.searchQuery);
+    this.setState({ searchQuery: '' });
   };
   render() {
     return (

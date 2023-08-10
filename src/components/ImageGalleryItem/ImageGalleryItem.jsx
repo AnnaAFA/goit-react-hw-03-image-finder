@@ -44,5 +44,8 @@ export class ImageItem extends Component {
 }
 
 ImageItem.propTypes = {
-  searchQuery: PropTypes.string,
+  id: PropTypes.number,
+  webformatURL: PropTypes.string.isRequired,
+  tags: PropTypes.string.isRequired,
+  largeImageURL: PropTypes.string.isRequired,
 };
